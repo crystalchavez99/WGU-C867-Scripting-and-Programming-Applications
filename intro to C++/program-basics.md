@@ -61,3 +61,30 @@ int main() {
    return 0;
 }
 ```
+
+## Logic Errors
+* Syntax error is known as a type of `compile-time error`
+* `Logic Error` is called `bug`, which an error that occurs while a program runs (not run as intended)
+```C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   int numBeans;
+   int numJars;
+   int totalBeans;
+
+   numBeans = 500;
+   numJars = 3;
+
+   cout << numBeans << " beans in ";
+   cout << numJars  << " jars yields ";
+   totalBeans = numBeans + numJars; // Oops, used + instead of *
+   cout << totalBeans << " total" << endl;
+
+   return 0;
+}
+```
+
+## Compiler Warnings
+* Compiler will report a `warning`, doesn't stop the compiler from doing its job but can indicate a possible logical error
